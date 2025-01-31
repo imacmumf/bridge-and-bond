@@ -1,0 +1,369 @@
+/* Setting fade transition and default settings */
+body {
+  background-color: #f5f5f5;
+  transition: background-color 1s ease;
+  animation: fadeIn 1.5s;
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+
+
+/* Navbar Styles */
+.navbar {
+  font-family: 'Dosis', sans-serif;
+  padding: 0.8rem 5rem;
+  /* Seperate brand and items */
+  justify-content: space-between;
+  transition-duration: 0.3s;
+}
+
+.navbar.active {
+  color: #555;
+  font-size: 1.1rem;
+  transition-duration: 0.3s;
+  opacity: 0.6;
+}
+
+.navbar.active .navbar-brand {
+  color: #555;
+  font-size: 1.1rem;
+  transition-duration: 0.3s;
+  opacity: 0.6;
+}
+
+
+a:hover{
+  opacity: 1.0;
+}
+
+/* panel styles */
+.panel {
+  /* min height incase content is higher than window height */
+  min-height: 110vh;
+  margin-bottom: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: nowrap; */
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Dosis', sans-serif;
+  box-shadow: 7px 5px 5px #3d3c3c;
+
+  /* outline: 10px solid hotpink; */
+  /* turn above on to see the edge of panels */
+}
+
+/* Parallax Divs */
+.parallax{
+  height: 8rem;
+  background-color: #000000;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ,url("../images/lake.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 60%;
+
+}
+
+.dark-section {
+  background: linear-gradient(#222222, #3D3D3D);
+  color: #f7f7f7;
+}
+
+.light-section {
+  background: linear-gradient(#f5f5f5, #f0f1f5);
+  color: #616161;
+}
+
+/* Landing Page */
+.bg-image p {
+  /* mix-blend-mode: hard-light; */
+  color: #f7f7f7;
+}
+
+
+/* Background Image */
+.bg-image {
+  background-color: #000000;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ,url("../images/lake.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* .opaque-back {
+  background-color: #48494a;
+  opacity: 0.7;
+  border-radius: 90%;
+  height: 5em;
+  width: 5em;
+} */
+
+.intro-name {
+  -webkit-text-fill-color: transparent;
+}
+
+.intro-box{
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+/* About Panel */
+.about-div{
+  padding-top: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  margin-right: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.projects-div{
+  padding-top: 2rem;
+  margin-top: 7rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  margin-left: 2rem;
+}
+
+.projects-p{
+  text-align: left;
+}
+
+.about-me-p {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* .experience-box{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+} */
+
+.clock {
+  font-size: 2rem;
+}
+
+.button-pic{
+  padding: 0;
+  margin: 1rem;
+  border-radius: 10px;
+
+}
+
+.button-pic:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      /* animation: pulse1 0.5s infinite linear alternate; */
+  }
+
+
+
+
+@keyframes pulse1 {
+  0% {
+    transform: scale(1.0);
+
+}
+50% {
+  transform: scale(1.1);
+}
+
+100% {
+    transform: scale(1.1);
+}
+}
+
+
+.emoji {
+  height: 200px;
+  border: 5px solid #c2c2c2;
+  border-radius: 100%;
+  margin: auto auto 5rem;
+  animation: shake 1s infinite linear alternate;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(-8deg);
+  }
+
+  8% {
+    transform: rotate(8deg);
+  }
+
+  16% {
+    transform: rotate(-8deg);
+  }
+
+  24% {
+    transform: rotate(8deg);
+  }
+
+  32% {
+    transform: rotate(-8deg);
+  }
+
+  40% {
+    transform: rotate(8deg);
+  }
+
+  48% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+
+
+/* Experience Panel */
+.logo-pic {
+  height: 8rem;
+  border-radius: 60%;
+  border: 5px solid #c2c2c2;
+}
+
+.carousel-item {
+  text-align: center;
+  border-color: #57b2f2;
+}
+
+/* Education Panel */
+
+.ed-box{
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.comp-sci-pic {
+  height: 150px;
+  border-radius: 7%;
+  float: right;
+  margin: 1rem;
+}
+
+/* Hobbies Panel */
+.hobbies-panel {
+  padding: 4rem;
+}
+.video-player {
+  margin: 0 auto;
+  border: 2px outset #8b8c94;
+  border-radius: 1%;
+  /* box-shadow: 10px 10px 10px #272729; */
+  animation: shadow-pulse 3s infinite linear alternate;
+}
+
+.speaker-vid {
+  margin-top: 4rem;
+}
+
+.halo-vid {
+  margin-bottom: 4rem;
+}
+
+
+@keyframes shadow-pulse {
+  0%{
+    box-shadow: 3px 7px 10px 5px #272729;
+
+  }
+  50%{
+    box-shadow: 5px 8px 10px 6px #3e3f40;
+
+  }
+  100%{
+    box-shadow: 3px 7px 10px 5px #272729;
+    
+  }
+
+}
+
+/* Text Styling */
+body {
+  text-align: center;
+  font-size: 120%;
+  line-height: 1.618;
+}
+
+h1, h2 {
+  font-size: 3em;
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+  background: -webkit-linear-gradient(#ffffff, #f7f7f7);
+  -webkit-background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+}
+
+p {
+
+  max-width: 30em;
+  margin: 1.618em;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+a {
+  color: #4332CF;
+}
+
+hr {
+  border-radius: 90%;
+  height: 2px;
+  width: 4rem;
+  background-color: #f7f7f7;
+}
+
+/* colours */
+.color-black {
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+}
+
+.color-white {
+  background-color: #f5f5f5;
+}
+
+/* Footer */
+#footer.panel {
+  min-height: 30vh;
+  height: 100px;
+  background-color: #edeff0;
+  color: #4f4f52;
+  
+}
+
+.social-icon {
+  color: #4f4f52;
+  font-size: 1.7rem;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Mobile Config */
+
+/* iPhone x config */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+ {
+  .bg-image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+
+  }
+}
