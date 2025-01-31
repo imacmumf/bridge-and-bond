@@ -59,12 +59,13 @@ a:hover{
 .parallax{
   height: 8rem;
   background-color: #000000;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ,url("../images/lake.jpg");
+  /*background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ,url("../images/lake.jpg");*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ,url("../images/yoga-studio-1.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 60%;
+  opacity: 40%;
 
 }
 
@@ -88,11 +89,14 @@ a:hover{
 /* Background Image */
 .bg-image {
   background-color: #000000;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ,url("../images/lake.jpg");
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ,url("../images/lake.jpg"); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ,url("../images/yoga-studio-1.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 40%;
+  
 }
 /* .opaque-back {
   background-color: #48494a;
