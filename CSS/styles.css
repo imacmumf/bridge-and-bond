@@ -3,6 +3,8 @@ body {
   background-color: #f5f5f5;
   transition: background-color 1s ease;
   animation: fadeIn 1.5s;
+  background-position: center center;
+  background-size: cover;
 }
 
 .wrapper {
@@ -63,7 +65,7 @@ a:hover{
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ,url("../images/yoga-studio-1.jpg");
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   opacity: 40%;
 
@@ -93,7 +95,7 @@ a:hover{
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ,url("../images/yoga-studio-1.jpg");
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   opacity: 40%;
   
@@ -140,7 +142,7 @@ a:hover{
   padding: 2rem;
 }
 
-/* .experience-box{
+/* .services-box{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 } */
 
@@ -222,7 +224,7 @@ a:hover{
 
 
 
-/* Experience Panel */
+/* services Panel */
 .logo-pic {
   height: 8rem;
   border-radius: 60%;
@@ -242,7 +244,7 @@ a:hover{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.comp-sci-pic {
+.small-filler-pic {
   height: 150px;
   border-radius: 7%;
   float: right;
@@ -304,7 +306,7 @@ h1, h2 {
 
 p {
 
-  max-width: 30em;
+  max-width: 40em;
   margin: 1.618em;
   text-align: center;
   font-size: 1.3rem;
@@ -365,7 +367,7 @@ hr {
  {
   .bg-image{
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     max-width: 100%;
 
