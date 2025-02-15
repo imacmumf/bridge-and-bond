@@ -14,11 +14,12 @@ body {
 
 /* Navbar Styles */
 .navbar {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Poppins', regular;
   padding: 0.8rem 5rem;
   /* Seperate brand and items */
-  justify-content: space-between;
+  justify-content: space-evenly;
   transition-duration: 0.3s;
+  flex:none;
 }
 
 .navbar.active {
@@ -50,7 +51,8 @@ a:hover{
   /* flex-wrap: nowrap; */
   justify-content: space-around;
   align-items: center;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Poppins', serif;
+  font-weight:200;
   box-shadow: 7px 5px 5px #3d3c3c;
 
   /* outline: 10px solid hotpink; */
@@ -64,7 +66,7 @@ a:hover{
   /*background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ,url("../images/lake.jpg");*/
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ,url("../images/yoga-studio-1.jpg");
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center center;
   background-repeat: no-repeat;
   opacity: 40%;
@@ -91,8 +93,8 @@ a:hover{
 /* Background Image */
 .bg-image {
   background-color: #000000;
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ,url("../images/lake.jpg"); */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ,url("../images/yoga-studio-1.jpg");
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ,url("../images/yoga-studio-1.jpg"); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ,url("../images/babyimg1.jpg");
   background-size: cover;
   /* background-attachment: fixed; */
   background-position: center center;
@@ -110,10 +112,20 @@ a:hover{
 
 .intro-name {
   -webkit-text-fill-color: transparent;
+  padding-bottom: .5rem;
+  font-weight: 250;
 }
 
 .intro-box{
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.19);
+border-radius: 6px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6px);
+-webkit-backdrop-filter: blur(6px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
 }
 
 /* About Panel */
@@ -147,7 +159,11 @@ a:hover{
 } */
 
 .clock {
-  font-size: 2rem;
+  font-size: 1rem;
+}
+
+.time-greeting{
+  padding-top: 3rem;
 }
 
 .button-pic{
@@ -297,6 +313,7 @@ body {
 
 h1, h2 {
   font-size: 3em;
+  font-weight: 200;
   letter-spacing: -0.05em;
   line-height: 1.1;
   background: -webkit-linear-gradient(#ffffff, #f7f7f7);
@@ -306,7 +323,7 @@ h1, h2 {
 
 p {
 
-  max-width: 40em;
+  max-width: 35em;
   margin: 1.618em;
   text-align: center;
   font-size: 1.3rem;
@@ -325,7 +342,7 @@ hr {
 
 /* colours */
 .color-black {
-  background-color: #1c1c1c;
+  background-color: #678d6a;
   color: #f0f0f0;
 }
 
@@ -358,6 +375,15 @@ hr {
   }
 }
 
+@keyframes grow {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(0.5);
+  }
+}
+
 /* Mobile Config */
 
 /* iPhone x config */
@@ -372,4 +398,16 @@ hr {
     max-width: 100%;
 
   }
+}
+@media (max-width: 699px) and (min-width: 1px) {
+  .navbar-brand{
+    font-size: 0.8rem;
+    transition: font-size 0.7s;
+}
+}
+@media (min-width: 699px) and (max-width: 4000px) {
+  .navbar-brand{
+    font-size: 1rem;
+    transition: font-size 0.7s;
+}
 }
